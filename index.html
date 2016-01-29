@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrapValidator.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script type="text/javascript" src="js/form-sub.js"></script>
+    <script type="text/javascript" src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrapValidator.js"></script>
+    <script src="https://cdn.firebase.com/js/client/1.0.15/firebase.js"></script>
+    <script type="text/javascript"></script>
+  
+
+
+
+    <script>
+        //we need to change this firebase ref to create once you submit the form. this will make sure theres no connection when someone leaves the form
+
+        // Create our Firebase reference
+        var firebaseref = new Firebase('https://iit-climbing-test.firebaseio.com//');
+
+
+    </script>
+
+</head>
+
+<body>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+
+<!-- What the user will see and enter -->
+
+<div class="navbar navbar-inverse navbar-static-top">
+
+    <span style="color: white; font-size: 150%;">
+    Week 01/25 - 02/01 </span>
+
+</div>
+
+
+<div>
+
+
+<form class="registerForm" role="form">
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label">Events</label>
+            <div class="col-sm-12">
+
+
+
+                <div class="checkbox"><label><input type="checkbox" name="events[]" value="ve_0129_5pm" />Vertical Endeabors 01/29 @5pm</label></div>
+                <div class="checkbox"><label><input type="checkbox" name="events[]" value="hp_0130_5pm" />Hidden Peak 01/30 @5pm</label></div>
+                <div class="checkbox"><label><input type="checkbox" name="events[]" value="ve_0131_10am" />Vertical Endeavors 01/31 @10:30am</label></div>
+
+
+                <!--<div id="checkboxes"></div>-->
+
+            </div>
+        </div>
+
+
+    <div class="row">
+    <div class="form-group col-xs-11 col-md-8 col-lg-6">
+        <div class="input-group">
+             <div class="input-group-addon">Name</div>
+             <input name="name" class="form-control" type="nameInput" placeholder="Enter name" id="nameInput">
+        </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="form-group col-xs-11 col-md-8 col-lg-6">
+            <div class="input-group">
+                <div class="input-group-addon">A#</div>
+                <input name="anumb" class="form-control" type="text" placeholder="Enter A number without the A" id="anumb">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+    <div class="form-group col-xs-11 col-md-8 col-lg-6">
+        <div class="input-group">
+            <div class="input-group-addon">@</div>
+            <input name="email" class="form-control" type="emailInput" placeholder="Enter email" id="emailInput">
+        </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="form-group col-xs-11 col-md-8 col-lg-6">
+            <div class="input-group">
+                <div class="input-group-addon">Phone</div>
+                <input name="phonenum" class="form-control" type="phoneInput" placeholder="Enter phone" id="phonenum">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group col-xs-11 col-md-8 col-lg-6">
+            <div class="input-group">
+                <div class="input-group-addon">Comments</div>
+                                <textarea name="comments" class="form-control"  rows="3" placeholder="Enter comments here" id="commentsIn"></textarea>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="form-actions">
+        <div class="col-sm-9 col-sm-offset-1">
+            <button type="submit" class="btn btn-success" >Validate</button>
+        </div>
+    </div>
+
+</form>
+</div>
+
+
+
+<!--
+<iframe src="http://mypages.iit.edu/~climbing/autoresponse/display_all_results2.html"
+        style="border: 0; width:80%; height:300px;"></iframe> -->
+
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    /*(function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+                function () {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+    //*/
+</script>
+</body>
+</html>
